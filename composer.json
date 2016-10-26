@@ -1,0 +1,29 @@
+{
+    "name": "smoney/smoney-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle for Smoney client",
+    "homepage": "http://www.s-money.fr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sherlockode",
+            "email": "contact@sherlockode.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.3|~3.0",
+        "smoney/smoney": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vowow/smoney"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Smoney\\SmoneyBundle\\":""
+        } 
+    }
+}
