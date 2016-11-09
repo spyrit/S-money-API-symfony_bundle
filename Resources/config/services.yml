@@ -3,7 +3,7 @@ services:
         class:  GuzzleHttp\ClientInterface
     smoney.base:
         abstract:  true
-        arguments: ['%api_base_url%', '%api_token%', '%api_version%', @guzzle.http_client.class, @jms_serializer.serializer]
+        arguments: ['%api_base_url%', '%api_token%', '%api_version%', '@guzzle.http_client.class', '@jms_serializer.serializer']
     smoney.user:
         class:  Smoney\Smoney\Client\UserClient
         parent: smoney.base
