@@ -16,12 +16,10 @@
         "smoney/smoney": "dev-master",
         "jms/serializer-bundle": "~1.1"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/vowow/smoney"
-        }
-    ],
+    "repositories": [{
+        "type": "composer",
+        "url": "http://87.98.144.127"
+    }],
     "autoload": {
         "psr-4": {
             "Smoney\\SmoneyBundle\\":""
