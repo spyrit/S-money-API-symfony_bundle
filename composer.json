@@ -10,6 +10,8 @@
             "email": "contact@sherlockode.fr"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.3|~3.0",
