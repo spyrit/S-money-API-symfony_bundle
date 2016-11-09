@@ -20,7 +20,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('smoney-bundle', 'array')
             ->children()
-            ->scalarNode('secret_key')->cannotBeEmpty()->isRequired()->end()
+            ->scalarNode('api_token')->cannotBeEmpty()->isRequired()->end()
             ->scalarNode('api_version')->cannotBeEmpty()->isRequired()->end()
             ->scalarNode('api_base_url')->cannotBeEmpty()->isRequired()->end()
             ->end();

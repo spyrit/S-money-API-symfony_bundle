@@ -13,7 +13,8 @@
     "require": {
         "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.3|~3.0",
-        "smoney/smoney": "dev-master"
+        "smoney/smoney": "dev-master",
+        "jms/serializer-bundle": "~1.1"
     },
     "repositories": [
         {
