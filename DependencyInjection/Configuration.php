@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('smoney-bundle', 'array')
+        $rootNode = $treeBuilder->root('smoney', 'array')
             ->children()
             ->scalarNode('api_token')->cannotBeEmpty()->isRequired()->end()
             ->scalarNode('api_version')->cannotBeEmpty()->isRequired()->end()
