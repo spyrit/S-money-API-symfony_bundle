@@ -1,27 +1,34 @@
 services:
     guzzle.http_client.class:
-        class:  GuzzleHttp\ClientInterface
+        class:  GuzzleHttp\Client
     smoney.base:
         abstract:  true
         arguments: ['%api_base_url%', '%api_token%', '%api_version%', '@guzzle.http_client.class', '@jms_serializer.serializer']
     smoney.user:
         class:  Smoney\Smoney\Client\UserClient
         parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.bank.account:
         class:  Smoney\Smoney\Client\BankAccountClient
         parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.card.payment:
         class:  Smoney\Smoney\Client\CardPaymentClient
         parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.kyc:
         class:  Smoney\Smoney\Client\KycClient
         parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.payment:
         class:  Smoney\Smoney\Client\PaymentClient
         parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.card.payout:
         class:  Smoney\Smoney\Client\PayoutClient
         parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.card.sub.account:
         class:  Smoney\Smoney\Client\SubAccountClient
         parent: smoney.base
+        arguments: [~, ~, 'v2', ~, ~]

@@ -23,5 +23,8 @@ class SmoneyExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+        $container->setParameter('api_token', $config['api_token']);
+        $container->setParameter('api_version', $config['api_version']);
+        $container->setParameter('api_base_url', $config['api_base_url']);
     }
 }
