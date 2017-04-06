@@ -21,11 +21,12 @@ class AppKernel extends Kernel
 {
     public function registerBundles()
     {
-        $bundles = array(
+        $bundles = [
             // ...
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new Smoney\SmoneyBundle\SmoneyBundle(),
             // ...
-        );
+        ];
     }
 }
 ```
@@ -34,9 +35,8 @@ class AppKernel extends Kernel
 
 ```yaml
 # app/config/config.yml
-    smoney:
-        api_token: YOUR_TOKEN
-        api_version: v1  #Global version to use for the API (can be override with SetVersion in any service)
-        api_base_url: https://rest-pp.s-money.fr/api/sandbox
-
+smoney:
+    api_token: YOUR_TOKEN
+    api_version: v1  #Global version to use for the API (can be override with SetVersion in any service)
+    api_base_url: https://rest-pp.s-money.fr/api/sandbox
 ```
