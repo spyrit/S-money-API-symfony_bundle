@@ -28,6 +28,10 @@ services:
         class:  Smoney\Smoney\Client\PayoutClient
         parent: smoney.base
         arguments: [~, ~, 'v1', ~, ~]
+    smoney.history:
+        class:  Smoney\Smoney\Client\HistoryClient
+        parent: smoney.base
+        arguments: [~, ~, 'v1', ~, ~]
     smoney.card.sub.account:
         class:  Smoney\Smoney\Client\SubAccountClient
         parent: smoney.base
