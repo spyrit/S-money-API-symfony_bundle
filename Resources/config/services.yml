@@ -7,36 +7,45 @@ services:
     smoney.user:
         class:  Smoney\Smoney\Client\UserClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.bank.account:
         class:  Smoney\Smoney\Client\BankAccountClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.card.payment:
         class:  Smoney\Smoney\Client\CardPaymentClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v2'
     smoney.kyc:
         class:  Smoney\Smoney\Client\KycClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.kyc.attachment:
         class:  Smoney\Smoney\Client\KycAttachmentClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.payment:
         class:  Smoney\Smoney\Client\PaymentClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.card.payout:
         class:  Smoney\Smoney\Client\PayoutClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.history:
         class:  Smoney\Smoney\Client\HistoryClient
         parent: smoney.base
-        arguments: [~, ~, 'v1', ~, ~]
+        arguments:
+            $version: 'v1'
     smoney.card.sub.account:
         class:  Smoney\Smoney\Client\SubAccountClient
         parent: smoney.base
-        arguments: [~, ~, 'v2', ~, ~]
+        arguments:
+            $version: 'v2'
