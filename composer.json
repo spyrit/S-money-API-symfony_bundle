@@ -15,7 +15,7 @@
     "require": {
         "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.3|~3.0",
-        "spyrit/smoney": "dev-master",
+        "spyrit/smoney": "dev-symfony3",
         "jms/serializer-bundle": "~1.1"
     },
     "autoload": {
